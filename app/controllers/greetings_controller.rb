@@ -1,3 +1,4 @@
+# rubocop:disable Style/Documentation
 # frozen_string_literal: true
 
 class GreetingsController < ApplicationController
@@ -6,3 +7,5 @@ class GreetingsController < ApplicationController
     render json: { message: greeting.message }
   end
 end
+
+# rubocop:enable Style/Documentation

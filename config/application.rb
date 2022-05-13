@@ -1,3 +1,4 @@
+# rubocop:disable Style/Documentation
 # frozen_string_literal: true
 
 require_relative 'boot'
@@ -27,3 +28,5 @@ module HelloRailsBackEnd
     config.api_only = true
   end
 end
+
+# rubocop:enable Style/Documentation

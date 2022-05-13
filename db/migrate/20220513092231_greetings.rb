@@ -1,3 +1,4 @@
+# rubocop:disable Style/Documentation
 # frozen_string_literal: true
 
 class Greetings < ActiveRecord::Migration[7.0]
@@ -9,3 +10,4 @@ class Greetings < ActiveRecord::Migration[7.0]
     end
   end
 end
+# rubocop:enable Style/Documentation
