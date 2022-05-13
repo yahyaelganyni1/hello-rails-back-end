@@ -1,0 +1,11 @@
+# rubocop:disable Style/Documentation
+# frozen_string_literal: true
+
+class GreetingsController < ApplicationController
+  def index
+    greeting = Greeting.order(Arel.sql('RANDOM()')).first
+    render json: { message: greeting.message }
+  end
+end
+
+# rubocop:enable Style/Documentation

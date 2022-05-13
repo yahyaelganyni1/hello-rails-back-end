@@ -1,24 +1,83 @@
-# README
+# Set up a "Hello world" project backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-Things you may want to cover:
+> A two repo approach to using rails and react
 
-* Ruby version
+## Frontend
 
-* System dependencies
+[GitHub PR](https://github.com/yahyaelganyni1/hello-react-front-end/pull/1)
 
-* Configuration
+## Built With
 
-* Database creation
+- Ruby on Rails
+- PostgreSQL
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+To get a local copy up and running follow these simple example steps.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Prerequisites
 
-* Deployment instructions
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://gorails.com/)
 
-* ...
+### Setup
+
+- Make sure you have Ruby on Rails set up properly on your computer
+- Clone or download this repo on your machine
+- Enter project directory
+
+### Install
+
+```sh
+bundle install
+```
+
+### Database
+
+```sh
+# Create user
+sudo -u postgres createuser hello_rails_back_end -s
+
+# Create the database
+rails db:create
+
+## Apply migration
+rails db:migrate
+
+# Seed database with 5 greetings
+rails db:seed
+```
+
+### Run
+
+```sh
+rails s
+```
+
+### Troubleshoot
+
+```sh
+### Undo migration
+rake db:migrate VERSION=0
+```
+
+## Author
+
+👤 **Yahya El-gnainyni**
+
+- GitHub: [@yahyaelganyni1](https://github.com/yahyaelganyni1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
